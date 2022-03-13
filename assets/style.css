@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: thistle;
+    color: white;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 a {
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+header h1 a:hover {
+    color:rgb(199, 146, 236);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    margin: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    display: flex;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+}
+
+header nav ul li a:hover {
+    color:rgb(199, 146, 236);
+}
+
+footer {
+    background: black;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h4 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+section {
+    padding: 50px;
+}
+
+.hero {
+    background-image: url("./images/hero-1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.responsive {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.hero h2 {
+    text-align: center;
+    text-decoration:underline;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+}
+
+.hero p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    word-spacing: 5px;
+
+}
+
+.work h2, .cv h2, .reach-out h2 {
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 25px;
+}
+
+.horiseon {
+    background-image: url(./images/Image\ 3-12-22\ at\ 1.34\ PM.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.esquire {
+    background-image: url(./images/esquire.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.numero {
+    background-image: url(./images/numero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.elle {
+    background-image: url(./images/elle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.button {
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    transition-duration: 0.5s;
+}
+
+.button:hover {
+    background-color: rgb(199, 146, 236);
+}
+
+.carousel {
+     width: 60%;
+     height: 500px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     object-fit:scale-down
+}
+.big-carousel {
+     width: 40px;
+     height: 590px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     object-fit:scale-down;
+}
+
+.click {
+   padding: 5px;
+   border-radius: 10px;
+   transition-duration: 0.5s;
+   display: flex;
+   justify-content:center;
+   flex-wrap: wrap;
+}
+
+.contact {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+    padding-right: 30px;
+}
+
+.contact-info {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     size: 40px;
+     padding-top: 10px 0 10px 0;
+}
+
+.photo-class {
+    padding-top: 2px;
+    background-image: url(./images/banner.jpg),
+     url(./images/banner-2.jpg);
+     background-position: top right, bottom left;
+     background-repeat: no-repeat;
+     display: flex;
+     justify-content: inherit;
+     flex-wrap: wrap
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 50px;
+}
+
+.carousel-indicators {
+    margin-bottom: 5rem;
+}
+
+
+
+/* small desktop screens */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h4,
+    footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+        text-align: center;
+    }
+
+    .photo-class {
+        flex: 0 70%;
+    }
+
+    #resume {
+        flex: 1 100%;
+    }
+}
+
+/* for tablets */
+@media screen and (max-width: 768) {
+    
+    section #contact-me {
+        padding-top: 5px;
+    }
+
+    section #resume {
+        padding-bottom: 5px;
+    }
+
+}
+
+/* for phones */ 
+@media screen and (max-width: 575px) {
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info>* {
+        flex: 0 100%;
+    }
+
+    section #contact-me {
+        padding-top: 5px;
+    }
+
+    section #resume {
+        padding-bottom: 5px;
+    }
+}
