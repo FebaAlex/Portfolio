@@ -158,8 +158,8 @@ section {
     box-shadow: 5px 5px 10px black;
 }
 
-.elle {
-    background-image: url(./images/elle.jpg);
+.food-finder {
+    background-image: url(./images/food-finder.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
